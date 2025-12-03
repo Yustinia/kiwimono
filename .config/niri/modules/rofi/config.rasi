@@ -1,0 +1,96 @@
+* {
+    font: "SF Pro Display 14";
+
+    /* Theme settings */
+    highlight: bold italic;
+
+    /* MONOCHROME GRADIENT PALETTE - FULLY OPAQUE */
+    white:             #e8e8e8; /* brightest */
+    gray20:            #383838; /* removed b3 alpha */
+    gray10:            #202020; /* removed b3 alpha */
+    black:             #101010; /* removed b3 alpha - darkest */
+
+    /* Base theme colors */
+    background:                  @black;
+    background-color:            @black; /* changed from transparent */
+    foreground:                  @white;
+    border-color:                @gray20; /* changed from transparent */
+    separatorcolor:              @gray20;
+
+    /* Normal state */
+    normal-background:           @black; /* changed from transparent */
+    normal-foreground:           @white;
+    alternate-normal-background: @black; /* changed from transparent */
+    alternate-normal-foreground: @white;
+    selected-normal-background:  @gray10;
+    selected-normal-foreground:  @white;
+
+    /* Active state */
+    active-background:           @black; /* changed from transparent */
+    active-foreground:           @white;
+    alternate-active-background: @black; /* changed from transparent */
+    alternate-active-foreground: @white;
+    selected-active-background:  @gray10;
+    selected-active-foreground:  @white;
+
+    /* Urgent state */
+    urgent-background:           @black; /* changed from transparent */
+    urgent-foreground:           @white;
+    alternate-urgent-background: @black; /* changed from transparent */
+    alternate-urgent-foreground: @white;
+    selected-urgent-background:  @gray10;
+    selected-urgent-foreground:  @white;
+}
+
+window {
+    location: north;
+    y-offset: calc(70% - 176px);
+    width: 600;
+    background-color: @black;
+    border-radius: 14px;
+}
+
+mainbox {
+    padding: 15px;
+    background-color: @black; /* added for consistency */
+}
+
+inputbar {
+    background-color: @black;
+    border-color: @gray20;
+    border: 2px;
+    border-radius: 7px;
+    padding: 16px 0px;
+    margin: 5px 0px;
+}
+
+prompt {
+    text-color: @white;
+    background-color: @black; /* changed from transparent */
+}
+
+entry {
+    placeholder: "  Welcome";
+    placeholder-color: @gray20;
+    background-color: @black; /* changed from transparent */
+}
+
+listview {
+    background-color: @black; /* changed from transparent */
+    lines: 9;
+    columns: 2;
+    fixed-height: true;
+}
+
+element {
+    padding: 5px 20px;
+    margin: 2px 2px;
+    border-radius: 7px;
+    background-color: @black; /* added for unselected state */
+}
+
+#scrollbar {
+    border: 0;
+    handle-color: @gray20; /* changed from transparent */
+    padding: 0;
+}

@@ -1,0 +1,95 @@
+* {
+    font: "SF Pro Display 14";
+
+    /* Theme settings */
+    highlight: bold italic;
+
+    /* MONOCHROME GRADIENT PALETTE */
+    white:             #e8e8e8; /* brightest */
+    gray20:            #383838b3;
+    gray10:            #202020b3;
+    black:             #101010b3; /* darkest */
+
+    /* Base theme colors */
+    background:                  @black;
+    background-color:            transparent;
+    foreground:                  @white;
+    border-color:                transparent;
+    separatorcolor:              @gray20;
+
+    /* Normal state */
+    normal-background:           transparent;
+    normal-foreground:           @white;
+    alternate-normal-background: transparent;
+    alternate-normal-foreground: @white;
+    selected-normal-background:  @gray10;
+    selected-normal-foreground:  @white;
+
+    /* Active state */
+    active-background:           transparent;
+    active-foreground:           @white;
+    alternate-active-background: transparent;
+    alternate-active-foreground: @white;
+    selected-active-background:  @gray10;
+    selected-active-foreground:  @white;
+
+    /* Urgent state */
+    urgent-background:           transparent;
+    urgent-foreground:           @white;
+    alternate-urgent-background: transparent;
+    alternate-urgent-foreground: @white;
+    selected-urgent-background:  @gray10;
+    selected-urgent-foreground:  @white;
+}
+
+window {
+    location: north;
+    y-offset: calc(70% - 176px);
+    width: 600;
+    background-color: @black;
+    border-radius: 16px;
+}
+
+mainbox {
+    padding: 15px;
+}
+
+inputbar {
+    background-color: @black;
+    border-color: @gray20;
+    border: 2px;
+    border-radius: 8px;
+    padding: 16px 8px;
+    margin: 5px 0px;
+}
+
+prompt {
+    text-color: @white;
+    background-color: transparent;
+}
+
+entry {
+    placeholder: "  Welcome";
+    placeholder-color: @gray20;
+    background-color: transparent;
+    background: transparent;
+}
+
+listview {
+    background-color: transparent;
+    lines: 9;
+    columns: 2;
+    fixed-height: true;
+}
+
+element {
+    padding: 5px 20px;
+    margin: 2px 2px;
+    border-radius: 8px;
+}
+
+#scrollbar {
+    border: 0;
+    handle-color: transparent;
+    padding: 0;
+}

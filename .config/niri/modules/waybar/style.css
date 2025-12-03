@@ -1,0 +1,170 @@
+@define-color white #e8e8e8;
+@define-color black #101010;
+@define-color oranage #f5e0d0;
+@define-color red #f1616b;
+@define-color blue #47a0ed;
+@define-color green #6fff75;
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: SF Pro Display, SF Mono, Noto Sans CJK HK, Noto Sans CJK JP, Noto Sans CJK KR, Noto Sans CJK SC, Noto Sans CJK TC, Noto Sans Mono CJK HK, Noto Sans Mono CJK JP, Noto Sans Mono CJK KR, Noto Sans Mono CJK SC, Noto Sans Mono CJK TC;
+    font-size: 1.05rem;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-top: 3px;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+#pulseaudio {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 7px;
+    border: 2px solid @white;
+    color: @white;
+    background-color: @black;
+    color: @white;
+}
+
+#pulseaudio:hover {
+    border-color: transparent;
+    background-color: @white;
+    color: @black;
+}
+
+#backlight {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 7px;
+    border: 2px solid @white;
+    color: @white;
+    background-color: @black;
+    color: @white;
+}
+
+#cpu {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 7px;
+    border: 2px solid @white;
+    color: @white;
+    background-color: @black;
+}
+
+#memory {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 7px;
+    border: 2px solid @white;
+    color: @white;
+    background-color: @black;
+}
+
+#clock {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 7px;
+    border: 2px solid @white;
+    color: @white;
+    background-color: @black;
+}
+
+#clock:hover {
+    border-color: transparent;
+    background-color: @white;
+    color: @black;
+}
+
+#temperature {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 7px;
+    border: 2px solid @white;
+    color: @white;
+    background-color: @black;
+}
+
+#battery {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 7px;
+    border: 2px solid @white;
+    color: @white;
+    background-color: @black;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: @green;
+}
+
+#battery.critical:not(.charging) {
+    color: @red;
+}
+
+#power-profiles-daemon {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 7px;
+    border: 2px solid @white;
+    color: @white;
+    background-color: @black;
+    color: @white;
+}
+
+#power-profiles-daemon:hover {
+    border-color: transparent;
+    background-color: @white;
+    color: @black;
+}
+
+#power-profiles-daemon.performance {
+    color: @red;
+}
+
+#power-profiles-daemon.balanced {
+    color: @blue;
+}
+
+#power-profiles-daemon.power-saver {
+    color: @green;
+}
+
+#network {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 7px;
+    border: 2px solid @white;
+    color: @white;
+    background-color: @black;
+}
+
+#tray {
+    padding-bottom: 7px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 7px;
+    border: 2px solid @white;
+    color: @white;
+    background-color: @black;
+}
