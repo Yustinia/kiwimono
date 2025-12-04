@@ -134,7 +134,6 @@ layout {
     }
 
     preset-window-heights {
-        proportion 0.33333
         proportion 0.5
         proportion 0.66667
     }
@@ -776,6 +775,12 @@ window-rule {
     match app-id="foot"
     match app-id="app.zen_browser.zen"
     default-column-width { proportion 0.7; }
+}
+
+// global
+window-rule {
+    min-width 400
+    min-height 400
 }
 
 // Games
