@@ -134,6 +134,7 @@ layout {
     }
 
     preset-window-heights {
+        proportion 0.33333
         proportion 0.5
         proportion 0.66667
     }
@@ -768,19 +769,15 @@ window-rule {
     default-floating-position x=0 y=250 relative-to="top"
 }
 
-// Terminal
+// Preferred Launch Size
 window-rule {
     match app-id="Code"
     match app-id="code-insiders"
     match app-id="foot"
     match app-id="app.zen_browser.zen"
+    match app-id="cef"
+    match title="Grayjay"
     default-column-width { proportion 0.7; }
-}
-
-// global
-window-rule {
-    min-width 400
-    min-height 400
 }
 
 // Games
