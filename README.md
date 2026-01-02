@@ -1,4 +1,4 @@
-# Hyprclipse
+# Nyxiri
 
 My personalized _Niri_ dotfiles with a minimal and monochromatic color scheme.
 
