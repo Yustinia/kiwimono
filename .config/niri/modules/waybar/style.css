@@ -25,14 +25,13 @@ window#waybar {
     padding-right: 14px;
     border-radius: 7px;
     transition: all 0.3s ease-in-out;
-    border: 2px solid @white;
+    border: transparent;
     color: @white;
     background-color: @black;
     color: @white;
 }
 
 #pulseaudio:hover {
-    border-color: transparent;
     background-color: @white;
     color: @black;
 }
@@ -43,7 +42,7 @@ window#waybar {
     padding-left: 14px;
     padding-right: 14px;
     border-radius: 7px;
-    border: 2px solid @white;
+    border: transparent;
     color: @white;
     background-color: @black;
     color: @white;
@@ -55,7 +54,7 @@ window#waybar {
     padding-left: 14px;
     padding-right: 14px;
     border-radius: 7px;
-    border: 2px solid @white;
+    border: transparent;
     color: @white;
     background-color: @black;
 }
@@ -66,7 +65,7 @@ window#waybar {
     padding-left: 14px;
     padding-right: 14px;
     border-radius: 7px;
-    border: 2px solid @white;
+    border: transparent;
     color: @white;
     background-color: @black;
 }
@@ -78,13 +77,12 @@ window#waybar {
     padding-right: 14px;
     border-radius: 7px;
     transition: all 0.3s ease-in-out;
-    border: 2px solid @white;
+    border: transparent;
     color: @white;
     background-color: @black;
 }
 
 #clock:hover {
-    border-color: transparent;
     background-color: @white;
     color: @black;
 }
@@ -95,7 +93,7 @@ window#waybar {
     padding-left: 14px;
     padding-right: 14px;
     border-radius: 7px;
-    border: 2px solid @white;
+    border: transparent;
     color: @white;
     background-color: @black;
 }
@@ -106,7 +104,7 @@ window#waybar {
     padding-left: 14px;
     padding-right: 14px;
     border-radius: 7px;
-    border: 2px solid @white;
+    border: transparent;
     color: @white;
     background-color: @black;
 }
@@ -127,14 +125,13 @@ window#waybar {
     padding-right: 14px;
     border-radius: 7px;
     transition: all 0.3s ease-in-out;
-    border: 2px solid @white;
+    border: transparent;
     color: @white;
     background-color: @black;
     color: @white;
 }
 
 #power-profiles-daemon:hover {
-    border-color: transparent;
     background-color: @white;
     color: @black;
 }
@@ -157,7 +154,7 @@ window#waybar {
     padding-left: 14px;
     padding-right: 14px;
     border-radius: 7px;
-    border: 2px solid @white;
+    border: transparent;
     color: @white;
     background-color: @black;
 }
@@ -167,7 +164,7 @@ window#waybar {
     padding-left: 14px;
     padding-right: 14px;
     border-radius: 7px;
-    border: 2px solid @white;
+    border: transparent;
     color: @white;
     background-color: @black;
 }
