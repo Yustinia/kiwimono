@@ -201,7 +201,7 @@ layout {
 
         width 2
         active-color "#e0e0e0aa"
-        inactive-color "transparent"
+        inactive-color "#101010aa"
 
         // Color of the border around windows that request your attention.
         urgent-color "#f53c3c"
@@ -649,7 +649,7 @@ binds {
     Super+Ctrl+Shift+P { power-off-monitors; }
 
     // App binds
-    Super+E         { spawn "nemo"; } // File Manager
+    Super+Alt+E         { spawn "nemo"; } // File Manager
     Super+Return        { spawn "foot"; } // Terminal
 
     // User binds

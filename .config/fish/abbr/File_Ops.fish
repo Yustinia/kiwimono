@@ -5,7 +5,7 @@ abbr -a rm    'rm -rfv'
 abbr -a grep  'rg -i'
 abbr -a cat   'bat'
 abbr -a pat   'bat -p'
-abbr -a ls    'eza -alhog --group --group-directories-first'
+abbr -a ls    'eza -alh --group --group-directories-first'
 abbr -a ll    'eza --tree'
 
 abbr -a mvr   'rsync -aP --remove-source-files --info=NAME --mkpath'
