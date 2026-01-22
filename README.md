@@ -66,7 +66,7 @@ nyxiri
 
 ## Preview
 
-![nyxiri-1](preview/nyxiri-preview-1.png)
-![nyxiri-2](preview/nyxiri-preview-2.png)
-![nyxiri-3](preview/nyxiri-preview-3.png)
-![nyxiri-4](preview/nyxiri-preview-4.png)
+![nyxiri-1](preview/niri-preview-1.png)
+![nyxiri-2](preview/niri-preview-2.png)
+![nyxiri-3](preview/niri-preview-3.png)
+![nyxiri-4](preview/niri-preview-4.png)
