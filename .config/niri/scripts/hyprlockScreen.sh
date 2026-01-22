@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WALL_DIR="$HOME/Pictures/Walls"
+WALL_DIR="$HOME/.cache"
 
 rm -f "$WALL_DIR/lockscreen.png"
 grim "$WALL_DIR/lockscreen.png"

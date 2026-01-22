@@ -43,8 +43,8 @@
 }
 
 window {
-    location: north;
-    y-offset: calc(70% - 176px);
+    location: south;
+    y-offset: -20px;
     width: 600;
     background-color: @black;
     border-radius: 14px;

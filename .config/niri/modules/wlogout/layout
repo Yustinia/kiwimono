@@ -1,14 +1,8 @@
 {
     "label" : "lock",
-    "action" : "hyprlock -c $HOME/.config/niri/modules/hypr/hyprlock.conf",
+    "action" : "bash -c '$HOME/.config/niri/scripts/hyprlockScreen.sh'",
     "text" : "Lock",
     "keybind" : "l"
-}
-{
-    "label" : "hibernate",
-    "action" : "bash -c 'hyprlock -c $HOME/.config/niri/modules/hypr/hyprlock.conf & sleep 1 && systemctl hibernate'",
-    "text" : "Hibernate",
-    "keybind" : "h"
 }
 {
     "label" : "logout",
@@ -21,12 +15,6 @@
     "action" : "systemctl poweroff",
     "text" : "Shutdown",
     "keybind" : "s"
-}
-{
-    "label" : "suspend",
-    "action" : "bash -c 'hyprlock -c $HOME/.config/niri/modules/hypr/hyprlock.conf & sleep 1 && systemctl suspend'",
-    "text" : "Suspend",
-    "keybind" : "u"
 }
 {
     "label" : "reboot",
