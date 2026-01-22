@@ -16,24 +16,22 @@ My personalized _Niri_ dotfiles with a minimal and monochromatic color scheme.
 | **Fonts**        | ttf-jetbrains-mono, ttf-jetbrains-mono-nerd,    |
 |                  | ttf-meslo-nerd, apple-fonts, and noto-fonts-cjk |
 
-| Miscellaneous | Description                   | Command                                      |
-| ------------- | ----------------------------- | -------------------------------------------- |
-| hypridle      | For hibernation/sleep/suspend | None                                         |
-| hyprlock      | For lockscreen                | Super + L                                    |
-| hyprpicker    | For colorpicker               | Super + P                                    |
-| hyprshot      | For screenshot                | Super + Shift + S (Region Clipboard)         |
-|               |                               | PrtSc (Screen Clipboard)                     |
-|               |                               | Super + PrtSc (Save to Pictures/Screenshots) |
+| Miscellaneous | Description     | Command                                      |
+| ------------- | --------------- | -------------------------------------------- |
+| hyprlock      | For lockscreen  | Super + L                                    |
+| hyprpicker    | For colorpicker | Super + P                                    |
+| hyprshot      | For screenshot  | Super + Shift + S (Region Clipboard)         |
+|               |                 | PrtSc (Screen Clipboard)                     |
+|               |                 | Super + PrtSc (Save to Pictures/Screenshots) |
 
-| Dependencies                |
-| --------------------------- |
-| gtk3                        |
-| gtk4                        |
-| xdg-desktop-portal-gnome    |
-| xdg-desktop-portal-gtk      |
-| xdg-desktop-portal-hyprland |
-| wl-clipboard                |
-| cliphist                    |
+| Dependencies             |
+| ------------------------ |
+| gtk3                     |
+| gtk4                     |
+| xdg-desktop-portal-gnome |
+| xdg-desktop-portal-gtk   |
+| wl-clipboard             |
+| cliphist                 |
 
 ## Installation
 
@@ -68,7 +66,7 @@ nyxiri
 
 ## Preview
 
-![rofi-swaync-prev](preview/nyxiri-1.png)
-![nyxiri-2](preview/nyxiri-2.png)
-![nyxiri-3](preview/nyxiri-3.png)
-![wallpaper-select-prev](preview/nyxiri-4.png)
+![nyxiri-1](preview/nyxiri-preview-1.png)
+![nyxiri-2](preview/nyxiri-preview-2.png)
+![nyxiri-3](preview/nyxiri-preview-3.png)
+![nyxiri-4](preview/nyxiri-preview-4.png)
