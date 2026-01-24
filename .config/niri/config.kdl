@@ -665,9 +665,9 @@ binds {
     Super+Shift+W       { spawn-sh "$HOME/.config/niri/scripts/wallpaperselector.sh"; }
 
     // screenshot
-    Print           { spawn-sh "hyprshot -m output --clipboard-only --freeze"; }
-    Super+Shift+S   { spawn-sh "hyprshot -m region --clipboard-only --freeze"; }
-    Super+Print     { spawn-sh "hyprshot -m region --freeze -o $HOME/Pictures/Screenshots -f $(date +%Y-%m-%d-%I:%M%p).png"; }
+    Print           { spawn-sh "$HOME/.config/niri/scripts/clipboardScreenshot.sh"; }
+    Super+Shift+S   { spawn-sh "$HOME/.config/niri/scripts/regionScreenshot.sh"; }
+    Super+Print     { spawn-sh "$HOME/.config/niri/scripts/screenScreenshot.sh"; }
 
     // color picker
     Super+P         { spawn-sh "hyprpicker -a -f hex"; }

@@ -20,7 +20,7 @@ My personalized _Niri_ dotfiles with a minimal and monochromatic color scheme.
 | ------------- | --------------- | -------------------------------------------- |
 | hyprlock      | For lockscreen  | Super + L                                    |
 | hyprpicker    | For colorpicker | Super + P                                    |
-| hyprshot      | For screenshot  | Super + Shift + S (Region Clipboard)         |
+| grim + slurp  | For screenshot  | Super + Shift + S (Region Clipboard)         |
 |               |                 | PrtSc (Screen Clipboard)                     |
 |               |                 | Super + PrtSc (Save to Pictures/Screenshots) |
 
