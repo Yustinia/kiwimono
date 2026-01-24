@@ -32,7 +32,7 @@ window#waybar {
 }
 
 #pulseaudio:hover {
-    border-color: transparent;
+    border-color: @black;
     background-color: @white;
     color: @black;
 }
@@ -84,7 +84,7 @@ window#waybar {
 }
 
 #clock:hover {
-    border-color: transparent;
+    border-color: @black;
     background-color: @white;
     color: @black;
 }
@@ -134,7 +134,7 @@ window#waybar {
 }
 
 #power-profiles-daemon:hover {
-    border-color: transparent;
+    border-color: @black;
     background-color: @white;
     color: @black;
 }
