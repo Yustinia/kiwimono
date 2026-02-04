@@ -63,8 +63,9 @@
     "backlight": {
         "format": "{icon}",
         "format-icons": ["░░░░░░░░", "█░░░░░░░", "▒█░░░░░░", "▒▒█░░░░░", "▒▒▒█░░░░", "▒▒▒▒█░░░", "▒▒▒▒▒█░░", "▒▒▒▒▒▒█░", "▒▒▒▒▒▒▒█"],
+        "on-click": "/usr/bin/python $HOME/.config/niri/scripts/randomWall.py",
         "tooltip": true,
-        "tooltip-format" : "Brightness: {percent}"
+        "tooltip-format" : "Brightness: {percent}\nClick to Change Wallpaper"
     },
     "battery": {
         "states": {
@@ -107,7 +108,7 @@
         },
         "on-click": "better-control",
         "tooltip": true,
-        "tooltip-format": "Volume: {volume}"
+        "tooltip-format": "Volume: {volume}\nClick for Better Control"
     }
     // "keyboard-state": {
         //     "numlock": true,
