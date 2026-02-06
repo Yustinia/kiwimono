@@ -63,7 +63,7 @@
     "backlight": {
         "format": "{icon}",
         "format-icons": ["░░░░░░░░", "█░░░░░░░", "▒█░░░░░░", "▒▒█░░░░░", "▒▒▒█░░░░", "▒▒▒▒█░░░", "▒▒▒▒▒█░░", "▒▒▒▒▒▒█░", "▒▒▒▒▒▒▒█"],
-        "on-click": "/usr/bin/python $HOME/.config/niri/scripts/randomWall.py",
+        "on-click": "$HOME/.config/niri/scripts/randomWall",
         "tooltip": true,
         "tooltip-format" : "Brightness: {percent}\nClick to Change Wallpaper"
     },
