@@ -20,7 +20,7 @@
         "battery"
     ],
     "modules-right": [
-        "network",
+        // "network",
         "tray",
         "power-profiles-daemon"
         // "mpd",
@@ -31,7 +31,6 @@
         // "custom/power"
     ],
     // Modules configuration
-
     "ext/workspaces": {
         "format": "{icon}",
         "ignore-hidden": true,
@@ -39,14 +38,14 @@
         "sort-by-id": true,
         "all-outputs": true,
         "format-icons": {
-            "default": "○",
-            "active": "●"
+            "default": "□",
+            "active": "■"
         }
     },
     "dwl/window": {
-        "format": "[{layout}] {title}"
+        "format": "[{layout}] {title}",
+        "max-length": 30
     },
-    
     "tray": {
         "icon-size": 21,
         "spacing": 7
@@ -80,7 +79,8 @@
             "▒▒▒▒█"
         ],
         "tooltip": true,
-        "tooltip-format" : "Brightness: {percent}"
+        "tooltip-format" : "Brightness: {percent}",
+        "scroll-step": 10
     },
     "battery": {
         "states": {

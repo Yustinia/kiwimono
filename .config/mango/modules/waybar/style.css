@@ -66,12 +66,6 @@ window#waybar {
     color: @white;
 }
 
-#clock:hover {
-    border-color: @black;
-    background-color: @white;
-    color: @black;
-}
-
 #temperature {
     padding: 7px 14px;
     border-radius: 0px;
@@ -142,8 +136,7 @@ window#waybar {
 
 #workspaces button {
     border-radius: 0px;
-    transition: all 0.3s ease-in-out;
-    color: @black;
+    color: @white;
 }
 
 /* #workspaces button.hidden {
@@ -161,7 +154,7 @@ window#waybar {
 } */
 
 #workspaces button.active {
-    color: @black;
+    color: @white;
 }
 
 #workspaces button.urgent {
