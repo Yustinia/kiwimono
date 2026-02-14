@@ -23,7 +23,7 @@ for img in "$WALLPAPER_DIR"/*; do
 done
 
 # Show in rofi with icons
-selected=$(cat "$temp_list" | rofi -config "$HOME/.config/niri/modules/rofi/config.rasi" -dmenu -i -p "Wallpaper" \
+selected=$(cat "$temp_list" | rofi -config "$HOME/.config/mango/modules/rofi/config.rasi" -dmenu -i -p "Wallpaper" \
     -show-icons \
     -theme-str 'listview { columns: 3; lines: 3; }' \
     -theme-str 'element { orientation: vertical; padding: 5px; }' \

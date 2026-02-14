@@ -10,6 +10,6 @@ grim "$WALL_DIR/lockscreen.png"
 #   # -brightness-contrast -5x10 \
 #   # -modulate 95,80,100 \
 #   "$WALL_DIR/lockscreen.png"
-hyprlock -c "$HOME/.config/niri/modules/hypr/hyprlock.conf"
+hyprlock -c "$HOME/.config/mango/modules/hypr/hyprlock.conf"
 
 exit 0
