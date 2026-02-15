@@ -1,6 +1,6 @@
 # Nyxiri
 
-My personalized _Niri_ dotfiles with a minimal and monochromatic color scheme.
+My personalized _mangoWC_ dotfiles with a minimal and monochromatic color scheme.
 
 ## Overview
 
@@ -30,12 +30,13 @@ My personalized _Niri_ dotfiles with a minimal and monochromatic color scheme.
 | gtk4                     |
 | xdg-desktop-portal-gnome |
 | xdg-desktop-portal-gtk   |
+| xdg-desktop-portal-wlr   |
 | wl-clipboard             |
 | cliphist                 |
 
 ## Installation
 
-1. Install `niri` via your package manager.
+1. Install `mangowc` via your package manager.
 
 2. Ensure you have the following packages and dependencies listed installed.
 
@@ -54,19 +55,24 @@ nyxiri
 │   ├── foot
 │   ├── gtk-3.0
 │   ├── gtk-4.0
-│   ├── niri
+│   ├── mango
 │   ├── nwg-look
 │   └── starship.toml
 ├── .icons
 │   └── MacTahoe-grey-dark
 ├── .themes
 │   └── Win12X-Fantasy-Compact
+├── archive
+├── preview
+│   ├── niri-preview-1.png
+│   ├── niri-preview-2.png
+│   ├── niri-preview-3.png
+│   └── niri-preview-4.png
 └── README.md
 ```
 
 ## Preview
 
-![nyxiri-1](preview/niri-preview-1.png)
-![nyxiri-2](preview/niri-preview-2.png)
-![nyxiri-3](preview/niri-preview-3.png)
-![nyxiri-4](preview/niri-preview-4.png)
+![nyxiri-1](preview/mango1.png)
+![nyxiri-2](preview/mango2.png)
+![nyxiri-3](preview/mango3.png)
