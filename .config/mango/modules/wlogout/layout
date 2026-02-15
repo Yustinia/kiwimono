@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "bash -c '$HOME/.config/niri/scripts/hyprlockScreen.sh'",
+    "action" : "bash -c '$HOME/.config/mango/scripts/hyprlockScreen.sh'",
     "text" : "Lock",
     "keybind" : "l"
 }

@@ -10,7 +10,7 @@ window {
 }
 
 button {
-    border-radius: 7px;
+    border-radius: 0px;
     border-color: transparent;
 	text-decoration-color: #e8e8e8;
     color: #e8e8e8;
@@ -20,16 +20,16 @@ button {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 20%;
-	margin: 10px;
-	border: 1.2px solid transparent;
+	margin: 0px;
+	margin-left: 140px;
 	transition: all 500ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 button:focus, button:active, button:hover {
-	border: 1.2px solid #e8e8e8;
 	color: #e8e8e8;
+	margin-left: 0px;
 	outline-style: none;
-	background-size: 30%;
+	background-size: 20%;
 }
 
 #lock {
