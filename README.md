@@ -1,4 +1,4 @@
-# Nyxiri
+# kiwimono
 
 My personalized _mangoWC_ dotfiles with a minimal and monochromatic color scheme.
 
