@@ -36,11 +36,11 @@
         "ignore-hidden": true,
         "on-click": "activate",
         "sort-by-id": true,
-        "all-outputs": true,
-        "format-icons": {
-            "default": "□",
-            "active": "■"
-        }
+        "all-outputs": true
+        // "format-icons": {
+        //     "default": "□",
+        //     "active": "■"
+        // }
     },
     "dwl/window": {
         "format": "[{layout}] {title}",
@@ -69,14 +69,16 @@
         "tooltip": false
     },
     "backlight": {
-        "format": "{icon}",
+        "format": "{icon}   {percent}",
         "format-icons": [
-            "░░░░░",
-            "█░░░░",
-            "▒█░░░",
-            "▒▒█░░",
-            "▒▒▒█░",
-            "▒▒▒▒█"
+            "󱩏",
+            "󱩐",
+            "󱩑",
+            "󱩒",
+            "󱩓",
+            "󱩔",
+            "󱩕",
+            "󱩖"
         ],
         "tooltip": true,
         "tooltip-format" : "Brightness: {percent}",
@@ -105,34 +107,28 @@
             "power-saver": ""
         }
     },
-    "network": {
-        "tooltip": true,
-        "tooltip-format": "IP: {ipaddr}\nFreq: {frequency}\nStrength: {signalStrength}\nSpeed: {bandwidthDownBits}",
-        "format-wifi": "{essid} [ {icon} ]",
-        "format-ethernet": "{essid}",
-        "format-disconnected": "Disconnected ⚠",
-        "format-icons": ["▂___", "▂▄__", "▂▄▆_", "▂▄▆█"]
-    },
+    // "network": {
+    //     "tooltip": true,
+    //     "tooltip-format": "IP: {ipaddr}\nFreq: {frequency}\nStrength: {signalStrength}\nSpeed: {bandwidthDownBits}",
+    //     "format-wifi": "{essid} [ {icon} ]",
+    //     "format-ethernet": "{essid}",
+    //     "format-disconnected": "Disconnected ⚠",
+    //     "format-icons": ["▂___", "▂▄__", "▂▄▆_", "▂▄▆█"]
+    // },
     "pulseaudio": {
-        "format": "{icon}",
-        "format-bluetooth": "{icon}",
-        "format-muted": "TERMINATED",
+        "format": "{icon}    {volume}",
+        "format-bluetooth": "{icon}   {volume}",
+        "format-muted": "   {volume}",
         "format-icons": {
             "headset": [
-                "░░░░░",
-                "█░░░░",
-                "▒█░░░",
-                "▒▒█░░",
-                "▒▒▒█░",
-                "▒▒▒▒█"
+                "",
+                "",
+                ""
             ],
             "default": [
-                "░░░░░",
-                "█░░░░",
-                "▒█░░░",
-                "▒▒█░░",
-                "▒▒▒█░",
-                "▒▒▒▒█"
+                "",
+                "",
+                ""
             ]
         },
         "on-click": "better-control",

@@ -49,7 +49,7 @@ My personalized _mangoWC_ dotfiles with a minimal and monochromatic color scheme
 ## Directory Structure
 
 ```bash
-nyxiri
+kiwimono
 ├── .config
 │   ├── fish
 │   ├── foot
@@ -64,15 +64,11 @@ nyxiri
 │   └── Win12X-Fantasy-Compact
 ├── archive
 ├── preview
-│   ├── niri-preview-1.png
-│   ├── niri-preview-2.png
-│   ├── niri-preview-3.png
-│   └── niri-preview-4.png
 └── README.md
 ```
 
 ## Preview
 
-![nyxiri-1](preview/mango1.png)
-![nyxiri-2](preview/mango2.png)
-![nyxiri-3](preview/mango3.png)
+![mango-1](preview/mango1.png)
+![mango-2](preview/mango2.png)
+![mango-3](preview/mango3.png)
