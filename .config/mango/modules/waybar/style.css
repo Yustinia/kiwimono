@@ -27,12 +27,6 @@ window#waybar {
     color: @white;
 }
 
-#pulseaudio:hover {
-    border-color: @black;
-    background-color: @white;
-    color: @black;
-}
-
 #pulseaudio.muted {
     color: @red;
 }

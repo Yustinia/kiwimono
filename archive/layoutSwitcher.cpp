@@ -8,10 +8,8 @@ int main()
 {
     std::vector<std::string> states = {
         "T",
-        "S",
         "G",
         "CT",
-        "VS",
         "VT",
         "VG",
         "RT",

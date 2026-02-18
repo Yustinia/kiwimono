@@ -131,9 +131,8 @@
                 ""
             ]
         },
-        "on-click": "better-control",
         "tooltip": true,
-        "tooltip-format": "Volume: {volume}\nClick for Better Control"
+        "tooltip-format": "Volume: {volume}"
     }
     // "keyboard-state": {
         //     "numlock": true,
