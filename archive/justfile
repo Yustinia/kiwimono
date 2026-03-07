@@ -1,0 +1,6 @@
+default:
+    just --list
+
+clangBuild fileName outName="output.bin":
+    @echo "Building {{fileName}}..."
+    clang++ -std=c++23 -o {{outName}} {{fileName}}
