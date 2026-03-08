@@ -36,36 +36,15 @@ My personalized _mangoWC_ dotfiles with a minimal and monochromatic color scheme
 
 ## Installation
 
-1. Install `mangowc` via your package manager.
+1. Install `mangowc` and `stow` via your package manager.
 
 2. Ensure you have the following packages and dependencies listed installed.
 
 3. `git clone` the repository to your local machine.
 
-4. Copy the files and directories inside the repo's `.config` folder to your local `.config`.
+4. Navigate and `cd` into the `dotfiles` directory.
 
-5. Copy `.icons` and `.themes` to your home directory. Typically denoted by (~).
-
-## Directory Structure
-
-```bash
-kiwimono
-├── .config
-│   ├── fish
-│   ├── foot
-│   ├── gtk-3.0
-│   ├── gtk-4.0
-│   ├── mango
-│   ├── nwg-look
-│   └── starship.toml
-├── .icons
-│   └── MacTahoe-grey-dark
-├── .themes
-│   └── Win12X-Fantasy-Compact
-├── archive
-├── preview
-└── README.md
-```
+5. `stow -t ~ <package>` to symlink them.
 
 ## Preview
 
