@@ -17,7 +17,7 @@ vim.opt.fillchars = { eob = " " } -- remove "~" lines
 vim.opt.cursorline = true
 
 -- Truecolor support
-vim.opt.termguicolors = false
+vim.opt.termguicolors = true
 
 -- Remove intro message
 vim.opt.shortmess:append("I")
@@ -28,10 +28,10 @@ vim.opt.shortmess:append("I")
 -- ==================================================
 
 vim.opt.guicursor =
-	"n-v-c:ver25-blinkwait700-blinkon400-blinkoff250," ..
-	"i-ci-ve:ver25-blinkwait700-blinkon400-blinkoff250," ..
-	"r-cr:hor20," ..
-	"o:hor50"
+    "n-v-c:ver25-blinkwait700-blinkon400-blinkoff250," ..
+    "i-ci-ve:ver25-blinkwait700-blinkon400-blinkoff250," ..
+    "r-cr:hor20," ..
+    "o:hor50"
 
 
 -- ==================================================
