@@ -8,7 +8,7 @@ abbr -a pat   'bat -p'
 abbr -a ls    'eza -alhog --group --group-directories-first'
 abbr -a ll    'eza --tree'
 
-abbr -a mvr   'rsync -aP --remove-source-files --info=NAME --mkpath'
-abbr -a cpr   'rsync -aP --info=NAME --progress --mkpath'
+abbr -a mvr 'rsync -aHAXvh --progress --mkpath --remove-source-files'
+abbr -a cpr 'rsync -aHAXvh --progress --mkpath'
 
 abbr -a z     'zoxide'
