@@ -3,69 +3,82 @@ import secrets
 import subprocess
 
 
-def reload_kitty() -> None:
-    result = subprocess.run(["pidof", "kitty"], capture_output=True, text=True)
-    if result.returncode == 0:
-        subprocess.run(["kill", "-SIGUSR1", result.stdout.strip()], check=True)
+WALL_PATH = Path.home() / "Pictures" / "Walls"
+SCREEN_WIDTH = 1920
+SCREEN_HEIGHT = 1080
 
 
-def reload_mako() -> None:
-    result = subprocess.run(["pidof", "mako"], capture_output=True, text=True)
-    if result.returncode == 0:
-        subprocess.run(["makoctl", "reload"], check=True)
-
-
-def change_wall(wall: str, coords: str) -> None:
-    cmd = [
-        "swww",
-        "img",
-        wall,
-        "--transition-type",
-        "grow",
-        "--transition-pos",
-        coords,
-        "--transition-duration",
-        "5",
-        "--transition-fps",
-        "60",
-        "--transition-bezier",
-        "0.25,0.10,0.25,1.0",
-    ]
-    notify = ["notify-send", "Changed Wallpaper", wall, "-i", wall]
-    matugen = [
-        "matugen",
-        "image",
-        "--type",
-        "scheme-expressive",
-        "--mode",
-        "dark",
-        "--contrast",
-        "-0.8",
-        wall,
-    ]
-    commands = [cmd, matugen, notify]
-
-    for command in commands:
-        _run_subprocess(command)
-
-
-def _run_subprocess(cmd: list[str]) -> None:
+def _run(cmd: list[str]) -> None:
     subprocess.run(cmd, check=True)
 
 
-def main() -> None:
-    WALL_PATH = Path.home() / "Pictures" / "Walls"
-    RANDOM_X = secrets.randbelow(1920)
-    RANDOM_Y = secrets.randbelow(1080)
-    random_coords = f"{str(RANDOM_X)},{str(RANDOM_Y)}"
+def _pidof(process: str) -> str | None:
+    result = subprocess.run(["pidof", process], capture_output=True, text=True)
+    return result.stdout.strip() if result.returncode == 0 else None
 
-    wall_list = [str(wall) for wall in WALL_PATH.iterdir()]
-    selected_wall = secrets.choice(wall_list)
 
-    change_wall(selected_wall, random_coords)
+def reload_kitty() -> None:
+    if pid := _pidof("kitty"):
+        _run(["kill", "-SIGUSR1", pid])
+
+
+def reload_mako() -> None:
+    if _pidof("mako"):
+        _run(["makoctl", "reload"])
+
+
+def change_wall(wall: Path, coords: str) -> None:
+    wall_str = str(wall)
+
+    _run(
+        [
+            "swww",
+            "img",
+            wall_str,
+            "--transition-type",
+            "grow",
+            "--transition-pos",
+            coords,
+            "--transition-duration",
+            "5",
+            "--transition-fps",
+            "60",
+            "--transition-bezier",
+            "0.25,0.10,0.25,1.0",
+        ]
+    )
+    _run(
+        [
+            "matugen",
+            "image",
+            "--type",
+            "scheme-neutral",
+            "--mode",
+            "dark",
+            "--contrast",
+            "-0.8",
+            wall_str,
+        ]
+    )
 
     reload_kitty()
     reload_mako()
+
+    _run(["notify-send", "Changed Wallpaper", wall_str, "-i", wall_str])
+
+
+def random_coords() -> str:
+    x = secrets.randbelow(SCREEN_WIDTH)
+    y = secrets.randbelow(SCREEN_HEIGHT)
+    return f"{x},{y}"
+
+
+def main() -> None:
+    walls = list(WALL_PATH.iterdir())
+    if not walls:
+        raise FileNotFoundError(f"No wallpapers found in {WALL_PATH}")
+
+    change_wall(secrets.choice(walls), random_coords())
 
 
 if __name__ == "__main__":

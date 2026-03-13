@@ -1,6 +1,6 @@
 # kiwimono
 
-My personalized _mangoWC_ dotfiles with a minimal and monochromatic color scheme.
+My personalized _hyprland_ dotfiles with matugen theming.
 
 ## Overview
 
@@ -8,8 +8,8 @@ My personalized _mangoWC_ dotfiles with a minimal and monochromatic color scheme
 | ---------------- | ----------------------------------------------- |
 | **App Launcher** | rofi                                            |
 | **Bar**          | waybar                                          |
-| **Notification** | swaync                                          |
-| **Terminal**     | foot                                            |
+| **Notification** | mako                                            |
+| **Terminal**     | kitty                                           |
 | **Wallpaper**    | swww                                            |
 | **Logout Menu**  | wlogout                                         |
 | **Shell**        | fish + starship                                 |
@@ -24,19 +24,9 @@ My personalized _mangoWC_ dotfiles with a minimal and monochromatic color scheme
 |               |                 | PrtSc (Screen Clipboard)                     |
 |               |                 | Super + PrtSc (Save to Pictures/Screenshots) |
 
-| Dependencies             |
-| ------------------------ |
-| gtk3                     |
-| gtk4                     |
-| xdg-desktop-portal-gnome |
-| xdg-desktop-portal-gtk   |
-| xdg-desktop-portal-wlr   |
-| wl-clipboard             |
-| cliphist                 |
-
 ## Installation
 
-1. Install `mangowc` and `stow` via your package manager.
+1. Install `hyprland` and `stow` via your package manager.
 
 2. Ensure you have the following packages and dependencies listed installed.
 
@@ -45,9 +35,3 @@ My personalized _mangoWC_ dotfiles with a minimal and monochromatic color scheme
 4. Navigate and `cd` into the `dotfiles` directory.
 
 5. `stow -t ~ <package>` to symlink them.
-
-## Preview
-
-![mango-1](preview/mango1.png)
-![mango-2](preview/mango2.png)
-![mango-3](preview/mango3.png)
