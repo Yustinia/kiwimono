@@ -9,6 +9,12 @@ def reload_kitty() -> None:
         subprocess.run(["kill", "-SIGUSR1", result.stdout.strip()], check=True)
 
 
+def reload_mako() -> None:
+    result = subprocess.run(["pidof", "mako"], capture_output=True, text=True)
+    if result.returncode == 0:
+        subprocess.run(["makoctl", "reload"], check=True)
+
+
 def change_wall(wall: str, coords: str) -> None:
     cmd = [
         "swww",
@@ -26,7 +32,17 @@ def change_wall(wall: str, coords: str) -> None:
         "0.25,0.10,0.25,1.0",
     ]
     notify = ["notify-send", "Changed Wallpaper", wall, "-i", wall]
-    matugen = ["matugen", "image", wall]
+    matugen = [
+        "matugen",
+        "image",
+        "--type",
+        "scheme-expressive",
+        "--mode",
+        "dark",
+        "--contrast",
+        "-0.8",
+        wall,
+    ]
     commands = [cmd, matugen, notify]
 
     for command in commands:
@@ -49,6 +65,7 @@ def main() -> None:
     change_wall(selected_wall, random_coords)
 
     reload_kitty()
+    reload_mako()
 
 
 if __name__ == "__main__":

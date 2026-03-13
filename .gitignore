@@ -1,1 +1,4 @@
 .git/
+dotfiles/hyprland_dir/.config/hypr/colors.conf
+dotfiles/kitty_dir/.config/kitty/colors.conf
+dotfiles/kitty_dir/.config/mako/colors.conf

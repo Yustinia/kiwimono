@@ -1,0 +1,14 @@
+anchor=top-right
+margin=20
+padding=20
+border-size=2
+border-radius=10
+width=300
+height=100
+default-timeout=2500
+max-visible=5
+layer=overlay
+font=SF Pro Display 11
+on-button-right=dismiss-all
+
+include=~/.config/mako/colors
