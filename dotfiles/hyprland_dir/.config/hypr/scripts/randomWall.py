@@ -3,6 +3,12 @@ import secrets
 import subprocess
 
 
+def reload_kitty() -> None:
+    result = subprocess.run(["pidof", "kitty"], capture_output=True, text=True)
+    if result.returncode == 0:
+        subprocess.run(["kill", "-SIGUSR1", result.stdout.strip()], check=True)
+
+
 def change_wall(wall: str, coords: str) -> None:
     cmd = [
         "swww",
@@ -20,8 +26,8 @@ def change_wall(wall: str, coords: str) -> None:
         "0.25,0.10,0.25,1.0",
     ]
     notify = ["notify-send", "Changed Wallpaper", wall, "-i", wall]
-
-    commands = [cmd, notify]
+    matugen = ["matugen", "image", wall]
+    commands = [cmd, matugen, notify]
 
     for command in commands:
         _run_subprocess(command)
@@ -41,6 +47,8 @@ def main() -> None:
     selected_wall = secrets.choice(wall_list)
 
     change_wall(selected_wall, random_coords)
+
+    reload_kitty()
 
 
 if __name__ == "__main__":
