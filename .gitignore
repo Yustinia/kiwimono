@@ -2,5 +2,4 @@
 dotfiles/hyprland_dir/.config/hypr/colors.conf
 dotfiles/kitty_dir/.config/kitty/colors.conf
 dotfiles/mako_dir/.config/mako/colors
-dotfiles/waybar_dir
-dotfiles/mango_dir
+dotfiles/nvim_dir/.config/nvim/lua/matugen/colors.lua

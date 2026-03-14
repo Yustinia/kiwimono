@@ -1,2 +1,2 @@
-alias ff='fastfetch -c examples/16.jsonc'
+alias ff='fastfetch -c examples/32.jsonc'
 alias clock='tty-clock -ct'
