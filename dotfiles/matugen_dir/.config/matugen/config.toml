@@ -11,3 +11,8 @@ output_path = '~/.config/hypr/colors.conf'
 [templates.mako]
 input_path = '~/.config/matugen/templates/mako-colors.conf'
 output_path = '~/.config/mako/colors'
+
+
+[templates.nvim]
+input_path = '~/.config/matugen/templates/nvim-colors.lua'
+output_path = '~/.config/nvim/lua/matugen/colors.lua'

@@ -17,7 +17,7 @@ vim.opt.fillchars = { eob = " " } -- remove "~" lines
 vim.opt.cursorline = true
 
 -- Truecolor support
-vim.opt.termguicolors = false
+vim.opt.termguicolors = true
 
 -- Remove intro message
 vim.opt.shortmess:append("I")
