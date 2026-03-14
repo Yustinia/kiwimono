@@ -1,5 +1,5 @@
 from pathlib import Path
-import secrets
+import random
 import subprocess
 
 
@@ -68,17 +68,18 @@ def change_wall(wall: Path, coords: str) -> None:
 
 
 def random_coords() -> str:
-    x = secrets.randbelow(SCREEN_WIDTH)
-    y = secrets.randbelow(SCREEN_HEIGHT)
+    x = random.randint(0, SCREEN_WIDTH)
+    y = random.randint(0, SCREEN_HEIGHT)
     return f"{x},{y}"
 
 
 def main() -> None:
     walls = list(WALL_PATH.iterdir())
+    random.shuffle(walls)
     if not walls:
         raise FileNotFoundError(f"No wallpapers found in {WALL_PATH}")
 
-    change_wall(secrets.choice(walls), random_coords())
+    change_wall(random.choice(walls), random_coords())
 
 
 if __name__ == "__main__":
