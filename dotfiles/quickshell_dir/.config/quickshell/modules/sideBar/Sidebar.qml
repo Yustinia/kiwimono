@@ -15,9 +15,9 @@ PanelWindow {
     }
 
     margins {
-        top: 10
-        left: 10
-        bottom: 10
+        top: 5
+        left: 5
+        bottom: 5
     }
 
     implicitWidth: 50
@@ -27,6 +27,8 @@ PanelWindow {
         anchors.fill: parent
         radius: 10
         color: Colors.clrBg
+        border.width: 2
+        border.color: Colors.clrTertiary
     }
 
     ColumnLayout {
