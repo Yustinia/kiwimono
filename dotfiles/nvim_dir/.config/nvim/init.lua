@@ -2,7 +2,6 @@ require("opts.core")
 require("config.lazy")
 require("opts.keymaps")
 
--- Load matugen colorscheme after plugins are ready
 require("config.matugen").load()
 
 -- Reload on wallpaper change
