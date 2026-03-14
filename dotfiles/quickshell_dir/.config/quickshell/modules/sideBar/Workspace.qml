@@ -1,6 +1,4 @@
-import Quickshell
 import Quickshell.Hyprland
-import Quickshell.Wayland
 import QtQuick
 import QtQuick.Layouts
 import "../../global"
@@ -14,7 +12,6 @@ Item {
     ColumnLayout {
         id: workspaceColumn
         anchors.fill: parent
-        anchors.topMargin: 10
         spacing: 4
 
         Repeater {
@@ -85,7 +82,7 @@ Item {
                     font {
                         pixelSize: Colors.fontSize
                         family: Colors.fontFamily
-                        bold: false
+                        bold: true
                     }
 
                     MouseArea {
