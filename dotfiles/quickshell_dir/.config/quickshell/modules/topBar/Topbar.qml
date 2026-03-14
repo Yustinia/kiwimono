@@ -6,21 +6,21 @@ import QtQuick.Layouts
 import "../../global"
 
 PanelWindow {
-    id: sideBar
+    id: topBar
 
     anchors {
         top: true
         left: true
-        bottom: true
+        right: true
     }
 
     margins {
         top: 10
         left: 10
-        bottom: 10
+        right: 10
     }
 
-    implicitWidth: 50
+    implicitHeight: 40
     color: "transparent"
 
     Rectangle {
@@ -29,17 +29,14 @@ PanelWindow {
         color: Colors.clrBg
     }
 
-    ColumnLayout {
+    RowLayout {
         anchors.fill: parent
+        anchors.leftMargin: 25
+
+        Date {}
 
         Item {
-            Layout.fillHeight: true
-        }
-
-        Workspace {}
-
-        Item {
-            Layout.fillHeight: true
+            Layout.fillWidth: true
         }
     }
 }

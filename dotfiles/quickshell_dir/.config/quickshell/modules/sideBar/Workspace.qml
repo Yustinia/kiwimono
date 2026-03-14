@@ -9,6 +9,15 @@ Item {
     implicitHeight: workspaceColumn.implicitHeight
     implicitWidth: parent.width
 
+    Rectangle {
+        anchors.centerIn: parent
+        width: 40
+        height: workspaceColumn.implicitHeight
+        color: Colors.clrBgBright
+
+        radius: 10
+    }
+
     ColumnLayout {
         id: workspaceColumn
         anchors.fill: parent
@@ -78,7 +87,7 @@ Item {
                     property var ws: Hyprland.workspaces.values.find(w => w.id === index + 1)
                     property bool isActive: Hyprland.focusedWorkspace?.id === (index + 1)
                     text: index + 1
-                    color: isActive ? Colors.clrSurface : (ws ? Colors.clrText : Colors.clrSurface)
+                    color: isActive ? Colors.clrSurface : Colors.clrText
                     font {
                         pixelSize: Colors.fontSize
                         family: Colors.fontFamily
