@@ -20,3 +20,11 @@ output_path = '~/.config/nvim/lua/matugen/colors.lua'
 [templates.quickshell]
 input_path = '~/.config/matugen/templates/quickshell-colors.qml'
 output_path = '~/.config/quickshell/global/Colors.qml'
+
+[templates.qofi]
+input_path = '~/.config/matugen/templates/rofi-colors.rasi'
+output_path ='~/.config/rofi/colors.rasi'
+
+[templates.superfile]
+input_path = '~/.config/matugen/templates/superfile-colors.toml'
+output_path = '~/.config/superfile/theme/matugen.toml'

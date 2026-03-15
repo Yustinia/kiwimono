@@ -42,9 +42,9 @@ Item {
         Text {
             Layout.alignment: Qt.AlignHCenter
             text: "·"
-            color: Colors.clrText
+            color: Colors.clrOnSecondary
             font {
-                pixelSize: Colors.fontSize
+                pixelSize: Colors.fontSize + 10
                 family: Colors.fontFamily
                 bold: true
             }
@@ -52,7 +52,7 @@ Item {
 
         Text {
             Layout.alignment: Qt.AlignHCenter
-            text: Qt.formatDateTime(clockObject.date, "yyyy-MM-dd")
+            text: Qt.formatDateTime(clockObject.date, "yyyy / MM / dd")
             color: Colors.clrText
             font {
                 pixelSize: Colors.fontSize

@@ -1,0 +1,12 @@
+* {
+    background:             #131314;
+    background-alt:         #474748;
+    foreground:             #adabad;
+    foreground-alt:         #8b8a8b;
+    primary:                #89919e;
+    on-primary:             #2e3641;
+    secondary:              #8d9199;
+    on-secondary:           #1d2228;
+    outline:                #606061;
+    error:                  #ff5449;
+}

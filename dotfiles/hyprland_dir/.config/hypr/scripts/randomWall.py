@@ -18,7 +18,10 @@ def _pidof(process: str) -> str | None:
 
 
 def reload_kitty() -> None:
-    if pid := _pidof("kitty"):
+    result = subprocess.run(["pidof", "kitty"], capture_output=True, text=True)
+    if result.returncode != 0:
+        return
+    for pid in result.stdout.strip().split():
         _run(["kill", "-SIGUSR1", pid])
 
 

@@ -1,0 +1,122 @@
+@import "colors.rasi"
+
+* {
+    margin:     0;
+    padding:    0;
+    border:     0;
+}
+
+window {
+    transparency:           "real";
+    location:               south;
+    anchor:                 south;
+    margin:                 0 0 5px 0;
+    fullscreen:             false;
+
+    width:                  800px;
+
+    border-radius:          10px;
+    border:                 2px;
+    border-color:           @secondary;
+
+    background-color:       @background;
+    cursor:                 "default";
+}
+
+mainbox {
+    background-color:       transparent;
+    orientation:            vertical;
+    padding:                16px;
+    spacing:                12px;
+}
+
+/* ── Search bar ─────────────────────────────────────────── */
+
+inputbar {
+    background-color:       @background-alt;
+    text-color:             @foreground;
+    border-radius:          10px;
+    padding:                10px 14px;
+    spacing:                8px;
+    children:               [ prompt, entry ];
+}
+
+prompt {
+    background-color:       transparent;
+    text-color:             @primary;
+    font:                   "SF Mono Bold 13";
+}
+
+entry {
+    background-color:       transparent;
+    text-color:             @foreground;
+    font:                   "SF Mono 13";
+    cursor:                 text;
+    placeholder:            "Search apps…";
+    placeholder-color:      @foreground-alt;
+}
+
+/* ── Results list ───────────────────────────────────────── */
+
+listview {
+    background-color:       transparent;
+    columns:                2;
+    lines:                  8;
+    scrollbar:              false;
+    spacing:                4px;
+    cycle:                  true;
+    dynamic:                true;
+    layout:                 vertical;
+}
+
+element {
+    background-color:       transparent;
+    text-color:             @foreground;
+    border-radius:          10px;
+    padding:                8px 12px;
+    spacing:                10px;
+    orientation:            horizontal;
+    cursor:                 pointer;
+}
+
+element normal.normal {
+    background-color:       transparent;
+    text-color:             @foreground;
+}
+
+element alternate.normal {
+    background-color:       transparent;
+}
+
+element selected.normal {
+    background-color:       @primary;
+    text-color:             @on-primary;
+}
+
+element-icon {
+    background-color:       transparent;
+    size:                   24px;
+    cursor:                 inherit;
+}
+
+element-text {
+    background-color:       transparent;
+    text-color:             inherit;
+    font:                   "SF Mono 13";
+    vertical-align:         0.5;
+    cursor:                 inherit;
+}
+
+/* ── Message / no results ───────────────────────────────── */
+
+message {
+    background-color:       @background-alt;
+    border-radius:          10px;
+    padding:                8px 12px;
+}
+
+textbox {
+    background-color:       transparent;
+    text-color:             @foreground-alt;
+    font:                   "SF Mono 12";
+}
